@@ -343,12 +343,13 @@ class Test: TreeSort, QuickSort, InsertionSort, SelectionSort, MergeSort, HeapSo
             insertionSort(test3, 100000);
             time2 = high_resolution_clock::now();
             duration = duration_cast<microseconds>(time2 - time1);
-            std::cout << duration.count() / pow(10, 6) << "\t ";
-            
+            std::cout << duration.count() / pow(10, 6) << "\n";
+            /*
             insertionSort(test4, 1000000);
             time1 = high_resolution_clock::now();
             duration = duration_cast<microseconds>(time1 - time2);
             std::cout << duration.count() / pow(10, 6) << '\n';
+            */
         }
         void selection_sort_caller(){
             std::cout << "Selection Sort\t\t\t";
@@ -367,12 +368,13 @@ class Test: TreeSort, QuickSort, InsertionSort, SelectionSort, MergeSort, HeapSo
             selection_sort(test3, 100000);
             time2 = high_resolution_clock::now();
             duration = duration_cast<microseconds>(time2 - time1);
-            std::cout << duration.count() / pow(10, 6) << "\t ";
-            
+            std::cout << duration.count() / pow(10, 6) << "\n";
+            /*
             selection_sort(test4, 1000000);
             time1 = high_resolution_clock::now();
             duration = duration_cast<microseconds>(time1 - time2);
             std::cout << duration.count() / pow(10, 6) << '\n';
+            */
         }
         void tree_sort_caller(){
             std::cout << "Tree Sort\t\t\t";
